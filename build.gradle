@@ -1,27 +1,83 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
-        
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
+//外部使用的安卓版本相关
+ext {
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+}
+//文件内部使用
+def supportLibraryVersion = '28.0.0'
+def butterknifeLatestReleaseVersion = '8.5.1'
+def glideReleaseVersion = '4.8.0'
+ext.deps = [
+        //android
+        supportCompat      : "com.android.support:support-compat:$supportLibraryVersion",
+        supportAnnotations : "com.android.support:support-annotations:$supportLibraryVersion",
+        supportRecyclerView: "com.android.support:recyclerview-v7:$supportLibraryVersion",
+        supportV4          : "com.android.support:support-v4:$supportLibraryVersion",
+        supportappcompatV7 : "com.android.support:appcompat-v7:$supportLibraryVersion",
+
+        butterknife        : "com.jakewharton:butterknife:$butterknifeLatestReleaseVersion",
+        butterknifeCompiler: "com.jakewharton:butterknife-compiler:$butterknifeLatestReleaseVersion",
+        raJava             : "io.reactivex.rxjava2:rxjava:2.1.17",
+        rxAndroid          : "io.reactivex.rxjava2:rxandroid:2.0.2",
+        apachecommons      : "org.apache.commons:commons-lang3:3.7",//该库可以去掉
+        retrofit           : "com.squareup.retrofit2:retrofit:2.4.0",
+        jackson            : "com.squareup.retrofit2:converter-jackson:2.4.0",
+        rxjava2            : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+        easyrecycleview    : "com.jude:easyrecyclerview:4.4.2",
+        Toasty             : "com.github.GrenderG:Toasty:1.3.0",
+        gifloadinglibrary  : "com.roger.gifloadinglibrary:gifloadinglibrary:1.0.0",
+        sweetalert         : "com.github.f0ris.sweetalert:library:1.5.1",
+        multidex           : "com.android.support:multidex:1.0.3",
+        FlycoTabLayout_Lib : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
+        materialdialogs    : "com.afollestad.material-dialogs:core:0.9.6.0",
+        zxing              : "com.google.zxing:core: 3.3.3",
+        zxingandroid       : "com.journeyapps:zxing-android-embedded:3.6.0",
+        picasso            : "com.squareup.picasso:picasso:2.71828",
+        ibrary             : "com.wang.avi:library:2.1.3",
+        rxpermissions      : "com.github.tbruyelle:rxpermissions:0.10.2",
+        xujiaji            : "com.github.xujiaji:happy-bubble:1.1.4",
+        constraint         : "com.android.support.constraint:constraint-layout:1.1.3",
+        testImplementation : "junit:junit:4.12",
+        testrunner         : "com.android.support.test:runner:1.0.2",
+        testespresso       : "com.android.support.test.espresso:espresso-core:3.0.2",
+//        glide              : "com.github.bumptech.glide:glide:$glideReleaseVersion",
+//        glidecompiler      : "com.github.bumptech.glide:compiler:$glideReleaseVersion",
+        progresspieview    : "com.github.filippudak.progresspieview:library:1.0.4",
+        imageloader        : "com.nostra13.universalimageloader:universal-image-loader:1.9.5",
+        pickerView         : "com.contrarywind:Android-PickerView:4.1.6",
+        design             : "com.android.support:design:$supportLibraryVersion",
+        interceptor        : "com.squareup.okhttp3:logging-interceptor:3.4.1",
+        permissiongen      : "com.lovedise:permissiongen:0.0.6"
+
+]
 allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url "https://jitpack.io" }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+

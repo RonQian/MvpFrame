@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--默认btn 文字的颜色-->
+    <color name="btnTextColor">#e3e6e3</color>
+
+    <!--正常editText的文本颜色-->
+    <color name="editTextColor">#888888</color>
+
+    <!--text view可点击时的颜色-->
+    <color name="txtLink">#407993</color>
+    <color name="ic_image_bg">#33000000</color>
+    <color name="white">#ffffff</color><!--白色 -->
+    <!--纯黑色 用于 menu 颜色  区分radioButton checkBox 的未选中的样式-->
+    <color name="black_theme">#000000</color>
+
+
+    <!-- 标准规范-->
+    <!--button边框的颜色-->
+    <color name="mian_button_frame">#C5C5C5</color>
+    <!--确认button  按下的bg -->
+    <color name="mian_ok_button_bg_press">#259B24</color>
+    <!--确认button  默认的bg -->
+    <color name="mian_ok_button_bg_default">#565555</color>
+
+    <color name="main_color">#0ad1ea</color>
+    <color name="color_tab">#3B4E59</color>
+
+    <color name="deep_green">#2dd5ec</color>
+    <color name="light_green">#B2f6ff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_e">#e0000000</color>
+    <color name="black">#000000</color><!--黑色 -->
+    <!--tablayout 标题默认时候的颜色-->
+    <color name="tablayout_title_normal_color">#595f6f</color>
+    <!--tablayout 标题选中时候的颜色-->
+    <color name="tablayout_title_select_color">#40434B</color>
+    <!--tablayout 下划线-->
+    <color name="underline">#77808080</color><!--灰色 -->
+    <!--group control divider 的边框的颜色-->
+    <color name="groupBorderColor">#78909C</color>
+    <!--text control不可用底色-->
+    <color name="txtEnable">#ECEFF1</color>
+    <!--tablayout背景颜色-->
+    <color name="tablayout_background_color">#0076FF</color>
+    <!--tablayout 字体颜色-->
+    <color name="tablayout_text_color">#0076FF</color>
+    <color name="tablayout_bottom_color">#0076FF</color>
+    <!--表格头背景色-->
+    <color name="table_header_bg">#407993</color>
+    <!--表格头字体颜色-->
+    <color name="table_header_font">#ffffff</color>
+    <!--我的任务完成背景颜色-->
+    <color name="mytask_state_bg_color">#8BC34A</color>
+    <!--我的任务完成报告字体颜色-->
+    <color name="mytask_state_text_color">#8BC34A</color>
+    <!--我的任务延期背景颜色-->
+    <color name="mytask_state_postpone_bg_color">#FF9800</color>
+    <!--我的任务延期字体颜色-->
+    <color name="mytask_state_postpone_text_color">#009688</color>
+    <!--button不可点击的时候背景色-->
+    <color name="btn_unclickable_bg">#a9a9a9</color>
+    <color name="transparent_eighty">#8000</color><!-- 透明百分之80 -->
+    <color name="muju_mainModule_default">#DFDFDF</color><!--模具模块默认背景颜色-->
+    <color name="muju_mainModule_press">#C0C0C0</color><!--模具模块按下背景颜色-->
+    <!--模具button确定  字体选中颜色   button字体默认为白色 输入框失去光标边框颜色 -->
+    <color name="muju_button_okTextColor">#505050</color>
+    <!--分割线-->
+    <color name="muju_segmentation_lin">#8a8a8a</color>
+    <!--最近维保信息不可编辑的样式-->
+    <color name="recently_not_editable_background">#D2C9C9</color>
+    <!--通用输入框不可编辑边框颜色-->
+    <color name="main_unclick_background_lin">#BBBBBB</color>
+    <!--通用输入框不可编辑颜色-->
+    <color name="main_unclick_background">#BEC3DD</color>
+    <!--通用输入框失去焦点颜色-->
+    <color name="main_edt_nofocus_background">#F9FBE7</color>
+    <!--通用输入框获取焦点边框颜色-->
+    <color name="main_edt_focus_background_lin">#FF5722</color>
+    <!--通用说明的字体颜色-->
+    <color name="main_rich_text_color">#909399</color>
+    <!--维修申请列表，原因以及备注颜色-->
+    <color name="workorder_remark_bg">#F5F3F3</color>
+    <!--模具tab背景颜色-->
+    <color name="mould_tabtitle_bg">#58A0E2</color>
+    <color name="mould_main_lock">#A7A7A7</color>
+</resources>

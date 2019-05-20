@@ -1,0 +1,46 @@
+<resources>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_login">登陆名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="app_name_title">质检</string>
+    <string name="is_exit">再按一次退出应用</string>
+    <string name="Ver">Ver:%0$d @Copy right DadeSys.com</string>
+    <string name="baseMould_BarCode">输入或扫描条码</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_save">保存</string>
+    <string name="common_confirm">确定</string>
+    <string name="qc_serverName">质检-Ip Or serverName</string>
+    <string name="qc_serverPort">质检-serverPort</string>
+    <string name="qc_serverMethod">质检-serverMethod</string>
+    <string name="muju_serverName">模具-Ip Or serverName</string>
+    <string name="muju_serverPort">模具-serverPort</string>
+    <string name="muju_serverMethod">模具-serverMethod</string>
+
+    <string name="qc_IpConfig">质检-Ip配置:</string>
+    <string name="muju_IpConfig">模具-Ip配置:</string>
+    <string name="common_empty_text">没有数据了-_-!</string>
+    <string name="mian_mould_nolock">该功能未解锁</string>
+    <string name="base_icon_image_name">图标</string>
+    <string name="base_image_name">图片</string>
+    <string name="base_affirm">确认?</string>
+    <string name="base_affirm_delete_image">确认删除图片?</string>
+    <string name="base_affirm_delete">是的,删除!</string>
+    <string name="base_affirm__hold_maintain_report">确认 [暂存] 保养报告?</string>
+    <string name="base_affirm_hold">是的,暂存!</string>
+    <string name="base_affirm__hold_maintain">确认 [完成] 保养?</string>
+    <string name="base_affirm_complete">是的,完成!</string>
+    <string name="base_no_thank">不，谢谢</string>
+    <string name="maintain_coloseImageDialog">可点击空白区域关闭弹窗</string>
+    <string name="base_photograph">拍照 </string>
+</resources>

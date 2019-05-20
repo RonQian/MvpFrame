@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--边框颜色-->
+    <stroke
+        android:width="@dimen/main_frameWidth_1"
+        android:color="@color/main_unclick_background_lin" />
+    <!--填充颜色-->
+    <solid android:color="@color/recently_not_editable_background" />
+    <!--paddin-->
+    <padding
+        android:padding="@dimen/main_frameRadius_5"
+       />
+    <corners
+        android:bottomLeftRadius="@dimen/main_frameRadius_3"
+        android:bottomRightRadius="@dimen/main_frameRadius_3"
+        android:topLeftRadius="@dimen/main_frameRadius_3"
+        android:topRightRadius="@dimen/main_frameRadius_3" />
+
+</shape>

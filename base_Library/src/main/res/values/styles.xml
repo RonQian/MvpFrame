@@ -1,0 +1,195 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--editText-->
+        <item name="editTextStyle">@style/myEditText</item>
+        <item name="android:buttonStyle">@style/myButton</item>
+        <!--修改menu图标的颜色-->
+        <item name="android:textColorSecondary">@color/black_theme</item>
+        <!--<item name="android:textViewStyle">@style/myTextView</item>-->
+
+        <!--material dialog style-->
+        <item name="md_dark_theme">false</item>
+        <item name="md_icon">@drawable/ic_query</item>
+        <item name="md_divider_color">#E91E63</item>
+
+    </style>
+
+    <style name="NoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--editText-->
+        <item name="editTextStyle">@style/myEditText</item>
+        <item name="buttonStyle">@style/myButton</item>
+        <!--修改menu图标的颜色-->
+        <item name="android:textColorSecondary">@color/black_theme</item>
+        <!--<item name="android:textViewStyle">@style/myTextView</item>-->
+
+        <!--material dialog style-->
+        <item name="md_dark_theme">false</item>
+        <item name="md_icon">@drawable/ic_query</item>
+        <item name="md_divider_color">#E91E63</item>
+
+    </style>
+
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <!--通用button的样式-->
+    <style name="myButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_btn_ok</item>
+        <item name="android:textColor">@color/btnTextColor</item>
+        <!--<item name="android:layout_marginTop">@dimen/control_margin_top</item>-->
+    </style>
+    <!--取消按钮的样式-->
+    <style name="myButtonCancel" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/mian_btn_bg_cancel</item>
+        <item name="android:textColor">@drawable/selector_btnoktext</item>
+    </style>
+
+    <style name="myEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_edit</item>
+        <item name="android:textColorHint">@color/editTextColor</item>
+        <item name="android:layout_margin">@dimen/control_margin_h</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:textSize">@dimen/edit_size</item>
+    </style>
+
+    <style name="myEditTextUnclickable" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_edit</item>
+        <item name="android:textColorHint">@color/editTextColor</item>
+        <item name="android:layout_margin">@dimen/control_margin_h</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:textSize">@dimen/edit_size</item>
+    </style>
+
+    <style name="myTextView">
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="background">@drawable/bg_text_board</item>
+        <item name="android:textColor">@color/editTextColor</item>
+    </style>
+
+    <!--表格头行样式-->
+    <style name="tableHeaderTextView">
+        <item name="android:background">@color/table_header_bg</item>
+        <item name="android:textColor">@color/table_header_font</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+
+    <style name="mytaskListTextstyle">
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mystask_state_bg_default</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:paddingLeft">0.5dp</item>
+        <item name="android:paddingRight">0.5dp</item>
+    </style>
+
+    <style name="qcReportTextstyle">
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mystask_state_bg_default</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!--去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--不需要标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--允许模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--全屏幕-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="mytaskQcReportTextStyle">
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mystask_state_bg_default</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:paddingLeft">0.5dp</item>
+        <item name="android:paddingRight">0.5dp</item>
+    </style>
+    <!--时间选择器动画的样式-->
+    <style name="picker_view_slide_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_slide_out_bottom</item>
+    </style>
+    <!--tabLayout-->
+    <style name="mainTabLayoutStyle">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabIndicatorColor">@color/tablayout_background_color</item>
+        <item name="tabIndicatorHeight">2dp</item>
+    </style>
+    <!--tabLayout 字体大小-->
+    <style name="TextStyle_work_order">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextSize_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/editTextColor</item>
+    </style>
+    <style name="TextSize_18_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/main_rich_text_color</item>
+    </style>
+
+    <style name="TextSize_16_black">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="imageShowDialog" parent="@android:style/Theme.Dialog">
+        <!--去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--不需要标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--允许模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--全屏幕-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

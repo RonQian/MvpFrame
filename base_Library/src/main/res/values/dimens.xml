@@ -1,0 +1,59 @@
+<resources>
+    <!--title的高度 全局统一-->
+    <dimen name="main_titleBarHight">35dp</dimen>
+    <!--边框的宽度 全局统一2dp-->
+    <dimen name="main_frameWidth_2">2dp</dimen>
+    <dimen name="main_frameWidth_1">1dp</dimen>
+    <!--边框倒角的圆弧 全局统一 5dp-->
+    <dimen name="main_frameRadius_5">5dp</dimen>
+    <dimen name="main_frameRadius_3">3dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_padding">10dp</dimen>
+
+    <!--所有的文本输入框的内空距-->
+    <dimen name="text_padding">5dp</dimen>
+
+    <!--每个控件之间有纵向间距-->
+    <dimen name="control_margin_h">50dp</dimen>
+
+    <!--主界面，每个图票的大小-->
+    <dimen name="main_image_width">130dp</dimen>
+
+    <!--group layout control padding-->
+    <dimen name="group_padding">5dp</dimen>
+    <!--分组控件 纵向间距-->
+    <dimen name="group_margin_v">2dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="edit_size">15sp</dimen>
+
+    <!--tablayout垂直分割线宽度-->
+    <dimen name="vertical_cutoffrule_width">1dp</dimen>
+
+    <!--tablayout滑动器的高度-->
+    <dimen name="tablayout_height">30dp</dimen>
+
+    <!--tablayout下划线的高度-->
+    <dimen name="tablayout_underline_height">1dp</dimen>
+    <!--tablayout 指示器的高度-->
+    <dimen name="tablayout_indicator_height">5dp</dimen>
+    <!--tablayout 指示器的宽-->
+    <dimen name="tablayout_indicator_width">50dp</dimen>
+    <!--tablayout divider_padding-->
+    <dimen name="tablayout_divider_padding">10dp</dimen>
+    <!--我的任务  质检报告 item title 高度-->
+    <dimen name="mytask_qc_form_list_height">30dp</dimen>
+    <!--质检报告 我的任务 list title 高度-->
+    <dimen name="qc_report_list_height">25dp</dimen>
+    <!--泡泡框字体大小-->
+    <dimen name="popup_window_text_size">14sp</dimen>
+    <!--查看质检报告弹框 item title 高度-->
+    <dimen name="mytask_qc_report_form_list_height">35dp</dimen>
+    <!--通用宽度30-->
+    <dimen name="base_width_30">30dp</dimen>
+    <!--通用宽度10-->
+    <dimen name="base_width_10">10dp</dimen>
+</resources>

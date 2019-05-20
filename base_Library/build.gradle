@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.supportCompat
+    implementation deps.supportAnnotations
+    implementation deps.supportRecyclerView
+    implementation deps.supportV4
+    implementation deps.supportappcompatV7
+    implementation deps.constraint
+
+    testImplementation deps.testImplementation
+    androidTestImplementation deps.testrunner
+    androidTestImplementation deps.testespresso
+    implementation deps.butterknife
+    implementation deps.butterknifeCompiler
+
+    implementation deps.raJava
+    implementation deps.rxAndroid
+    implementation deps.apachecommons
+    implementation deps.retrofit
+    implementation deps.jackson
+    implementation deps.rxjava2
+    implementation deps.easyrecycleview
+    implementation deps.Toasty
+    implementation deps.gifloadinglibrary
+    implementation deps.sweetalert
+    implementation deps.multidex
+    implementation deps.ibrary
+    implementation deps.FlycoTabLayout_Lib
+    implementation deps.zxing
+    implementation deps.zxingandroid
+    implementation deps.progresspieview
+    implementation deps.imageloader
+    implementation deps.design
+    implementation deps.interceptor
+    implementation deps.materialdialogs
+
+}

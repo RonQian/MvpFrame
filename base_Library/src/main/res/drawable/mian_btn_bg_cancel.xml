@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--取消Button的样式 包括 删除，取消等的按钮-->
+
+    <item android:drawable="@drawable/btncancel_normal" android:state_pressed="false" />
+    <item android:drawable="@drawable/btncancel_pressed" android:state_pressed="true" />
+
+
+</selector>
