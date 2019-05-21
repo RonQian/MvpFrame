@@ -16,7 +16,7 @@ public abstract class BaseService {
     /**
      * @描述： 自定义处理定阅
      * @返回：
-     * @作者：phj
+     * @作者： ronQian
      * @日期： 2018-08-01 16:58:34
      */
     protected <T> Observable<T> dealResult(Observable<T> observable) {

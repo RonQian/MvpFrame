@@ -19,7 +19,7 @@ import java.util.Date;
 
 public class DateformatUtils {
     @SuppressLint("SimpleDateFormat")
-    public static final SimpleDateFormat DEFAULT_DATE_FORMAT =
+    private static final SimpleDateFormat DEFAULT_DATE_FORMAT =
             new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     @SuppressLint("SimpleDateFormat")
     public static final SimpleDateFormat DATE_FORMAT_DATE = new SimpleDateFormat("yyyy-MM-dd");
@@ -77,7 +77,7 @@ public class DateformatUtils {
         if (time.endsWith(".0")) {
             time = time.substring(0, time.length() - 2);
         }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//小写的mm表示的是分钟
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//小写的mm表示的是分钟
         Date birthday;
         try {
             birthday = sdf.parse(time);
@@ -120,7 +120,7 @@ public class DateformatUtils {
         if (TextUtils.isEmpty(timeStr)) {
             return null;
         }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
         try {
             date = sdf.parse(timeStr);
         } catch (ParseException e) {
@@ -137,7 +137,7 @@ public class DateformatUtils {
     public static String getDateFromYYYYMMDD(long msl) {
         String str = "";
         if (msl != 0) {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             try {
                 str = sdf.format(msl);
             } catch (Exception e) {
@@ -170,7 +170,7 @@ public class DateformatUtils {
         String str = "";
         long tiem = System.currentTimeMillis();
         if (tiem != 0) {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             try {
                 str = sdf.format(tiem);
             } catch (Exception e) {
@@ -209,7 +209,7 @@ public class DateformatUtils {
      * @return
      */
     public static String dateToTimestamp(String str) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = null;
         try {
             date = format.parse(str);
@@ -228,7 +228,7 @@ public class DateformatUtils {
         if (time.endsWith(".0")) {
             time = time.substring(0, time.length() - 2);
         }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//小写的mm表示的是分钟
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//小写的mm表示的是分钟
         Date date = null;
         try {
             date = sdf.parse(time);
@@ -323,7 +323,7 @@ public class DateformatUtils {
     }
 
     private static String formatStr(int str) {
-        String formatString = String.format("%2d", str).replace(" ", "0");
+        @SuppressLint("DefaultLocale") String formatString = String.format("%2d", str).replace(" ", "0");
         return formatString;
     }
 
@@ -349,7 +349,7 @@ public class DateformatUtils {
     //时间转date
     public static  long strToDate1 (String s){
         long time  =0;
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = null;
         try {
             date = simpleDateFormat.parse(s);
