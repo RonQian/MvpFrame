@@ -1,4 +1,4 @@
-package com.qry.base.model.util;
+package com.qry.base.util;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatEditText;

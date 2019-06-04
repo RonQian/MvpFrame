@@ -1,4 +1,4 @@
-package com.qry.base.model.util;
+package com.qry.base.model.observer;
 
 
 import com.qry.base.model.ICommServiceCallBack;

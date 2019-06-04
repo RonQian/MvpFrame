@@ -2,8 +2,8 @@ package com.qry.base.model;
 
 
 import com.qry.base.model.dto.ApiResponseDto;
-import com.qry.base.model.util.DoOnNextConsumer;
-import com.qry.base.model.util.SimpleDealApiResponseObserver;
+import com.qry.base.model.observer.DoOnNextConsumer;
+import com.qry.base.model.observer.SimpleDealApiResponseObserver;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;

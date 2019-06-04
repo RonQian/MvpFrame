@@ -4,7 +4,7 @@ package com.qry.base.model.dto.mesApi;
 import android.annotation.SuppressLint;
 
 import com.qry.base.application.MyApplication;
-import com.qry.base.model.util.CustEnumToInt;
+import com.qry.base.model.observer.CustEnumToInt;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
